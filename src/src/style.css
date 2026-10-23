@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #17304f;
+  --color-mist: #a9c8e8;
+  --color-gold: #d4a853;
+}
+
+@layer components {
+  /* Buttons: .btn holds the shared layout, the variant classes add colour. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-transparent px-4 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-navy text-white hover:bg-navy/85 active:bg-navy disabled:hover:bg-navy;
+  }
+
+  .btn-secondary {
+    @apply bg-gold text-navy hover:bg-gold/80 active:bg-gold disabled:hover:bg-gold;
+  }
+
+  .btn-outline {
+    @apply border-navy bg-transparent text-navy hover:bg-mist/40 active:bg-mist/60 disabled:hover:bg-transparent;
+  }
+
+  /* Cards */
+  .card {
+    @apply overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-200 transition-shadow duration-200 hover:shadow-lg;
+  }
+
+  .card-body {
+    @apply flex flex-col gap-3 p-6;
+  }
+
+  .card-title {
+    @apply text-lg font-bold text-navy;
+  }
+
+  .card-text {
+    @apply text-sm leading-relaxed text-slate-600;
+  }
+
+  /* Alerts: .alert holds the shared layout, the type classes add colour. */
+  .alert {
+    @apply flex items-start gap-3 rounded-lg border-l-4 p-4 text-sm;
+  }
+
+  .alert-success {
+    @apply border-green-600 bg-green-50 text-green-900;
+  }
+
+  .alert-warning {
+    @apply border-amber-500 bg-amber-50 text-amber-900;
+  }
+
+  .alert-error {
+    @apply border-red-600 bg-red-50 text-red-900;
+  }
+
+  .alert-info {
+    @apply border-navy bg-mist/30 text-navy;
+  }
+
+  .section-title {
+    @apply mb-4 text-2xl font-bold text-navy;
+  }
+}
