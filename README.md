@@ -27,7 +27,5 @@ I joined the programme after the group sessions had taken place, so I completed 
 
 ## Trade-off: `@apply` component classes vs utilities in the HTML
 
-*Catch-up submission, completed with AI assistance.*
-
 Writing every utility directly in the HTML makes each element's styling visible in one place and easy to change for one element, but long class lists get repeated on every button and become hard to keep consistent. Moving them into `.btn-primary` or `.alert-error` with `@apply` keeps the HTML short and means one change updates every button, but the styles now live in a separate file, so you have to open the CSS to see what a class does. I used `@apply` only for components that repeat (buttons, cards, alerts) and kept one-off layout utilities such as grids and spacing in the HTML.
 
