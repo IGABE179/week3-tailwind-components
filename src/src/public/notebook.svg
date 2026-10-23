@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-labelledby="t">
+  <title id="t">Navy notebook with a gold pencil</title>
+  <rect width="400" height="240" fill="#dce9f5"/>
+  <rect x="120" y="40" width="150" height="170" rx="10" fill="#17304f"/>
+  <rect x="120" y="40" width="22" height="170" rx="6" fill="#0f2238"/>
+  <rect x="165" y="80" width="80" height="10" rx="5" fill="#a9c8e8"/>
+  <rect x="165" y="100" width="60" height="10" rx="5" fill="#a9c8e8"/>
+  <g transform="rotate(-35 300 140)">
+    <rect x="240" y="130" width="120" height="18" rx="4" fill="#d4a853"/>
+    <polygon points="360,130 380,139 360,148" fill="#f3dcae"/>
+    <rect x="232" y="130" width="12" height="18" rx="3" fill="#e57373"/>
+  </g>
+</svg>
